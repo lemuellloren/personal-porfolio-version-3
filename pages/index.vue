@@ -20,6 +20,11 @@
   $project-title: 24px;
   $box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   $border-radius: 10px;
+  $font: 'Poppins', sans-serif;
 
+
+body {
+  font-family: $font;
+}
 
 </style>
