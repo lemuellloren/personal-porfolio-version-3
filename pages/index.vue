@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <TheHeader></TheHeader>
+    <TheFooter></TheFooter>
   </div>
 </template>
 
@@ -17,5 +18,8 @@
   $body-text: 18px;
   $section-title: 30px;
   $project-title: 24px;
+  $box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  $border-radius: 10px;
+
 
 </style>
