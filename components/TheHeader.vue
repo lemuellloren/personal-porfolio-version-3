@@ -11,19 +11,19 @@
            <nav class="nav">
                <ul class="menu">
                    <li class="menu__list">
-                        <NuxtLink class="menu__link" to="/">Projects</NuxtLink>
+                        <NuxtLink class="menu__link fas fa-home switch-theme__icon" to="/"></NuxtLink>
                    </li>
                    <li class="menu__list">
-                       <NuxtLink class="menu__link" to="/">Snippets</NuxtLink>
+                       <NuxtLink class="menu__link" to="/">About Me</NuxtLink>
                    </li>
                    <li class="menu__list">
-                       <NuxtLink class="menu__link" to="/">Contact Me</NuxtLink>
+                       <NuxtLink class="menu__link" to="/">Experience</NuxtLink>
+                   </li>
+                   <li class="menu__list">
+                        <a href="#"><span class="fas fa-sun switch-theme-icon"></span></a>
                    </li>
                </ul>
            </nav>
-           <div class="switch-theme">
-               <a href="#"><span class="fas fa-sun switch-theme__icon"></span></a>
-           </div>
        </div>
       </div>
     </div>

@@ -89,12 +89,9 @@
     }
   }
 
-  .switch-theme {
+  .switch-theme-icon {
     margin-left: 40px;
-
-    &__icon {
-      @include menu-link;
-    }
+    @include menu-link;
   }
 
 </style>
