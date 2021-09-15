@@ -8,7 +8,6 @@
 
 <script>
   export default {}
-
 </script>
 
 <style lang="scss">
@@ -123,6 +122,16 @@
     &__heading {
      @include heading
     }
+    &__subheading {
+      @include heading
+    }
+     &__subheading--bold {
+       color: $primary-color;
+       font-weight: 600;
+      }
+      &__body {
+        @include body-text;
+      }
   }
 }
 </style>
