@@ -1,6 +1,7 @@
 <template>
   <div class="main-container">
     <TheHeader></TheHeader>
+    <Intro></Intro>
     <TheFooter></TheFooter>
   </div>
 </template>
@@ -14,7 +15,7 @@
   //* Variables 
   $primary-color: #7D5FFF;
   $secondary-color: #1A202C;
-  $tertiary-color: #F7F7F7;
+  $white: #F7F7F7;
   $dark-bg: #1D2430;
   $body-text: 18px;
   $section-title: 30px;
@@ -25,10 +26,11 @@
   sans-serif;
   $transitions: all ease .4s;
 
-  // * Mixins 
+  //* Mixins 
+  // menu 
   @mixin menu-link {
     font-size: 18px;
-    color: $tertiary-color;
+    color: $white;
     text-decoration: none;
     transition: $transitions;
 
@@ -47,20 +49,40 @@
     }
   }
 
-  // Global Class 
+  // section default style
+  @mixin section-default {
+    background-color:  $secondary-color;
+     padding-top: 80px;
+  padding-bottom: 80px;
+  }
+
+  // heading 
+  @mixin heading {
+    color: $white;
+    font-weight: 500;
+    line-height: 1em;
+  }
+  // body text 
+  @mixin body-text {
+    font-size: 18px;
+    line-height: 1.5em;
+    color: $white;
+    font-weight: normal;
+  }
+  //* Global Class 
   .my-icons {
-    color: $tertiary-color;
+    color: $white;
     font-size: 30px;
   }
 
-  // Header
+  //* Header
   .the-header {
     min-height: 120px;
     background-color: $secondary-color;
   }
 
   .logo {
-    color: $tertiary-color;
+    color: $white;
     font-weight: 300;
     font-size: 30px;
     line-height: 45px;
@@ -94,4 +116,13 @@
     @include menu-link;
   }
 
+//* Intro Section 
+.intro-container {
+  @include section-default;
+  .intro {
+    &__heading {
+     @include heading
+    }
+  }
+}
 </style>
