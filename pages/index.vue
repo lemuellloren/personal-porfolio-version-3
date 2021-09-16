@@ -114,10 +114,29 @@
 
   //* GLOBAL CLASS 
   // icons 
-  .my-icons {
+  .my-icons-lg {
     color: $white;
     font-size: 30px;
   }
+
+  .my-icons-wrap {
+    width: 72px;
+    height: 72px;
+    background: $dark-bg;
+    box-shadow: $box-shadow;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+  }
+
+  // icons list 
+  .my-icons-ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
 
   // buttons 
   .primary-button {
@@ -136,7 +155,7 @@
       font-size: 30px;
       line-height: $heading-line-height;
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
 
       &:after {
         content: '';

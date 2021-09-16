@@ -14,8 +14,8 @@
               I like to craft solid and scalable frontend products with great user experiences.
             </p>
             <div class="intro__btn-group pt-3">
-                <a href="#" class="btn primary-button mr-3">Contact Me</a>
-                <a href="#" class="btn secondary-button mr-3">View Projects</a>
+              <a href="#" class="btn primary-button mr-3">Contact Me</a>
+              <a href="#" class="btn secondary-button mr-3">View Projects</a>
             </div>
             <!-- Technology and Tools  -->
             <div class="techstack">
@@ -24,6 +24,62 @@
                   Technologies &amp; Tools
                 </p>
               </div>
+              <!-- icons  -->
+              <div class="techstack--icons">
+                <ul class="my-icons-ul d-flex">
+                  <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-js-square my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-angular my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-vuejs my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-react my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-sass my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-php my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-wordpress-simple my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-laravel my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-git-alt my-icons-lg"></span>
+                    </div>
+                  </li>
+                   <li class="my-icons-li">
+                    <div class="my-icons-wrap">
+                      <span class="fab fa-figma my-icons-lg"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- icons  -->
             </div>
             <!-- Technology and Tools  -->
           </div>
