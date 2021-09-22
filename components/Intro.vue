@@ -29,52 +29,52 @@
                 <ul class="my-icons-ul d-flex">
                   <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-js-square my-icons-lg"></span>
+                      <span class="fab fa-js-square my-icons-lg" v-b-tooltip.hover title="JavaScript"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-angular my-icons-lg"></span>
+                      <span class="fab fa-angular my-icons-lg" v-b-tooltip.hover title="Angular"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-vuejs my-icons-lg"></span>
+                      <span class="fab fa-vuejs my-icons-lg" v-b-tooltip.hover title="Vue"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-react my-icons-lg"></span>
+                      <span class="fab fa-react my-icons-lg" v-b-tooltip.hover title="React"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-sass my-icons-lg"></span>
+                      <span class="fab fa-sass my-icons-lg" v-b-tooltip.hover title="Sass"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-php my-icons-lg"></span>
+                      <span class="fab fa-php my-icons-lg" v-b-tooltip.hover title="PHP"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-wordpress-simple my-icons-lg"></span>
+                      <span class="fab fa-wordpress-simple my-icons-lg" v-b-tooltip.hover title="WordPress"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-laravel my-icons-lg"></span>
+                      <span class="fab fa-laravel my-icons-lg" v-b-tooltip.hover title="Laravel"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-git-alt my-icons-lg"></span>
+                      <span class="fab fa-git-alt my-icons-lg" v-b-tooltip.hover title="Git"></span>
                     </div>
                   </li>
                    <li class="my-icons-li">
                     <div class="my-icons-wrap">
-                      <span class="fab fa-figma my-icons-lg"></span>
+                      <span class="fab fa-figma my-icons-lg" v-b-tooltip.hover title="Figma"></span>
                     </div>
                   </li>
                 </ul>

@@ -22,6 +22,7 @@
   $project-title: 24px;
   $box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   $border-radius: 10px;
+  $border-hover: 1px solid $primary-color;
   $font: 'Poppins',
   sans-serif;
   $transitions: all ease .4s;
@@ -117,9 +118,6 @@
   .my-icons-lg {
     color: $white;
     font-size: 30px;
-  }
-
-  .my-icons-wrap {
     width: 72px;
     height: 72px;
     background: $dark-bg;
@@ -129,6 +127,12 @@
     align-items: center;
     justify-content: center;
     margin-right: 25px;
+    transition: $transitions;
+
+    &:hover {
+      border: $border-hover;
+      color: $primary-color;
+    }
   }
 
   // icons list 
@@ -136,7 +140,7 @@
     padding: 0;
     list-style: none;
     margin: 0;
-}
+  }
 
   // buttons 
   .primary-button {
