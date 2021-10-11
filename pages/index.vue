@@ -101,8 +101,8 @@
       right: 0;
       background-color: $secondary-color;
       border-radius: $border-radius;
-      transform-origin: center right;
-      transform: scaleX(0);
+      transform-origin: center bottom;
+      transform: scaleY(0);
       transition: transform 0.25s ease-in-out;
     }
 
@@ -112,8 +112,8 @@
     }
 
     &:hover::before {
-      transform-origin: center left;
-      transform: scaleX(1);
+      transform-origin: center top;
+      transform: scaleY(1);
     }
   }
 
@@ -139,8 +139,8 @@
       right: 0;
       background-color: $primary-color;
       border-radius: $border-radius;
-      transform-origin: center right;
-      transform: scaleX(0);
+      transform-origin: center bottom;
+      transform: scaleY(0);
       transition: transform 0.25s ease-in-out;
     }
 
@@ -150,8 +150,8 @@
     }
 
     &:hover::before {
-      transform-origin: center left;
-      transform: scaleX(1);
+      transform-origin: center top;
+      transform: scaleY(1);
     }
   }
 
