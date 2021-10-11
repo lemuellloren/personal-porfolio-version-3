@@ -18,6 +18,7 @@
   $white: #F7F7F7;
   $dark-bg: #1D2430;
   $body-text: 18px;
+  $big-title: 90px;
   $section-title: 30px;
   $project-title: 24px;
   $box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -29,6 +30,7 @@
   $border: 1px solid $primary-color;
   $body-line-height: 1.5em;
   $heading-line-height: 1em;
+  $bold: bold;
 
   //* MIXINS
   // menu 
@@ -56,6 +58,7 @@
   // section default style
   @mixin section-default {
     background-color: $secondary-color;
+    min-height: 880px;
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -108,6 +111,7 @@
     }
   }
 
+
   //* GLOBAL CLASS 
   // icons 
   .my-icons-lg {
@@ -154,16 +158,19 @@
       font-size: 30px;
       line-height: $heading-line-height;
       position: relative;
+      margin-top: -55px;
       margin-bottom: 50px;
 
       &:after {
         content: '';
-        height: 10px;
+        height: 5px;
         width: 70px;
         position: absolute;
         background-color: $primary-color;
         left: 0;
+        right: 0;
         bottom: -15px;
+        margin: 0 auto;
       }
     }
   }
@@ -211,17 +218,32 @@
     @include menu-link;
   }
 
+  // Big title 
+  .big-title {
+    color: $dark-bg;
+    font-size: $big-title;
+    font-weight: 900;
+    text-align: center;
+    line-height: 8.4375rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
+
   //* Intro Section 
   .intro-container {
     @include section-default;
 
     .intro {
       &__heading {
-        @include heading
+        @include heading;
+        font-size: 90px;
+        font-weight: $bold;
+        margin-top: -70px;
       }
 
       &__subheading {
-        @include heading
+        @include heading;
+        margin-top: 20px;
       }
 
       &__subheading--bold {
@@ -231,6 +253,9 @@
 
       &__body {
         @include body-text;
+        width: 45%;
+        margin: 0 auto;
+        padding-bottom: 30px;
       }
     }
   }
@@ -244,9 +269,9 @@
   .the-footer {
     min-height: 120px;
     background-color: $secondary-color;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
 
     .footer-text {
       @include body-text;
