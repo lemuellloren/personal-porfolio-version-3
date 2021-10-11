@@ -195,12 +195,13 @@
       top: 60%;
       margin-top: 10px;
       padding: 10px;
+      font-weight: 500;
       color: $primary-color;
       font-size: $body-text-md;
       background: $secondary-color;
       border: $border;
       box-sizing: border-box;
-      border-radius: 10px;
+      border-radius: $border-radius;
       white-space: nowrap;
       pointer-events: none;
       user-select: none;

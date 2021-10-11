@@ -16,7 +16,7 @@
         </p>
         <div class="intro__btn-group pt-3">
           <a href="#" class="btn primary-button mr-3">Contact Me</a>
-          <a href="#" class="btn secondary-button mr-3">View Projects</a>
+          <a href="#" class="btn secondary-button mr-3">Portfolio</a>
         </div>
         <!-- Technology and Tools  -->
         <div class="techstack">
@@ -67,7 +67,7 @@
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-wordpress-simple my-icons-lg"></span>
-                  <span class="my-icons-wrap__text">wordPress</span>
+                  <span class="my-icons-wrap__text">WordPress</span>
                 </div>
               </li>
               <li class="my-icons-li">
