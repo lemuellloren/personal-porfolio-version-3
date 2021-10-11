@@ -108,7 +108,7 @@
 
     &:hover {
       cursor: pointer;
-      color: $primary-color;
+      color: $white;
     }
 
     &:hover::before {
@@ -146,7 +146,7 @@
 
     &:hover {
       cursor: pointer;
-      color: $secondary-color;
+      color: $white;
     }
 
     &:hover::before {
