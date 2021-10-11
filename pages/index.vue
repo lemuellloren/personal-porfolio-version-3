@@ -80,7 +80,9 @@
 
   // primary button 
   @mixin primary-btn {
-    color: $white;
+    z-index: 1;
+    position: relative;
+    color: $secondary-color;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -88,26 +90,67 @@
     transition: $transitions;
     background-color: $primary-color;
 
-    &:hover {
-      color: $secondary-color;
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $secondary-color;
+      border-radius: $border-radius;
+      transform-origin: center right;
+      transform: scaleX(0);
+      transition: transform 0.25s ease-in-out;
     }
 
+    &:hover {
+      cursor: pointer;
+      color: $primary-color;
+    }
+
+    &:hover::before {
+      transform-origin: center left;
+      transform: scaleX(1);
+    }
   }
 
   // secondary button 
   @mixin secondary-btn {
+    z-index: 1;
+    position: relative;
     color: $primary-color;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     background: unset;
+    border: 1px solid $primary-color;
     border-radius: $border-radius;
 
-    &:hover {
-      color: $primary-color;
-      border: 1px solid $primary-color;
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $primary-color;
       border-radius: $border-radius;
+      transform-origin: center right;
+      transform: scaleX(0);
+      transition: transform 0.25s ease-in-out;
+    }
 
+    &:hover {
+      cursor: pointer;
+      color: $secondary-color;
+    }
+
+    &:hover::before {
+      transform-origin: center left;
+      transform: scaleX(1);
     }
   }
 
