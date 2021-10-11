@@ -37,41 +37,49 @@
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-js-square my-icons-lg"></span>
+                  <span class="my-icons-wrap__text">JavaScript (ES6+)</span>
                 </div>
               </li>
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-angular my-icons-lg"></span>
+                   <span class="my-icons-wrap__text">Angular</span>
                 </div>
               </li>
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-vuejs my-icons-lg"></span>
+                  <span class="my-icons-wrap__text">VueJS</span>
                 </div>
               </li>
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-react my-icons-lg"></span>
+                  <span class="my-icons-wrap__text">ReactJS</span>
                 </div>
               </li>
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-php my-icons-lg"></span>
+                  <span class="my-icons-wrap__text">PHP</span>
                 </div>
               </li>
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-wordpress-simple my-icons-lg"></span>
+                  <span class="my-icons-wrap__text">wordPress</span>
                 </div>
               </li>
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-laravel my-icons-lg"></span>
+                  <span class="my-icons-wrap__text">Laravel</span>
                 </div>
               </li>
               <li class="my-icons-li">
                 <div class="my-icons-wrap">
                   <span class="fab fa-figma my-icons-lg"></span>
+                  <span class="my-icons-wrap__text">Figma</span>
                 </div>
               </li>
             </ul>

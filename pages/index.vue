@@ -18,16 +18,17 @@
   $white: #F7F7F7;
   $dark-bg: #1D2430;
   $body-text: 18px;
+  $body-text-md: 12px;
   $big-title: 90px;
   $section-title: 30px;
   $project-title: 24px;
   $box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  $border-radius: 10px;
-  $border-hover: 1px solid $primary-color;
+  $border-radius: 5px;
+  $border-hover: 2px solid $primary-color;
   $font: 'Poppins',
   sans-serif;
   $transitions: all ease .4s;
-  $border: 1px solid $primary-color;
+  $border: 2px solid $primary-color;
   $body-line-height: 1.5em;
   $heading-line-height: 1em;
   $bold: bold;
@@ -173,12 +174,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    margin: 10px;
     transition: $transitions;
 
     &:hover {
       border: $border-hover;
       color: $primary-color;
+    }
+  }
+
+  // icon tooltip 
+  .my-icons-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    &__text {
+      position: absolute;
+      top: 60%;
+      margin-top: 10px;
+      padding: 10px;
+      color: $primary-color;
+      font-size: $body-text-md;
+      background: $secondary-color;
+      border: $border;
+      box-sizing: border-box;
+      border-radius: 10px;
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      span {
+        top: 100%;
+        opacity: 0.9;
+      }
     }
   }
 
