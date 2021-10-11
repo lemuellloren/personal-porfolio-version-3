@@ -69,10 +69,10 @@
 
   // body text 
   @mixin body-text {
+    font-weight: normal;
     font-size: $body-text;
     line-height: $body-line-height;
     color: $white;
-    font-weight: normal;
   }
 
   // primary button 
