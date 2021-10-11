@@ -27,6 +27,9 @@
             <p class="section-title__text">
               Technologies &amp; Tools
             </p>
+            <p class="body-text">
+              Here are a few technologies &amp; tools I’ve been working with recently:
+            </p>
           </div>
           <!-- icons  -->
           <div class="techstack--icons d-flex justify-content-center">

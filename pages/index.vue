@@ -59,8 +59,8 @@
   @mixin section-default {
     background-color: $secondary-color;
     min-height: 880px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   // heading 
@@ -156,6 +156,11 @@
 
 
   //* GLOBAL CLASS 
+  .body-text {
+    @include body-text;
+    padding-bottom: 30px;
+  }
+
   // icons 
   .my-icons-lg {
     color: $white;
