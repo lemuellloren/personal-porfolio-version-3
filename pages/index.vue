@@ -69,15 +69,10 @@
 
   // body text 
   @mixin body-text {
-    font-size: 18px;
+    font-size: $body-text;
     line-height: $body-line-height;
     color: $white;
     font-weight: normal;
-    transition: $transitions;
-
-    &:hover {
-      border-radius: $border-radius;
-    }
   }
 
   // primary button 
