@@ -245,4 +245,23 @@
     padding-top: 100px;
   }
 
+  // * Footer 
+  .the-footer {
+    min-height: 120px;
+    background-color: $secondary-color;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .footer-text {
+      @include body-text;
+      text-align: center;
+
+      &__creator-name {
+        font-weight: 500;
+        color: $primary-color;
+      }
+    }
+  }
+
 </style>
