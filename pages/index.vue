@@ -36,7 +36,7 @@
   //* MIXINS
   // menu 
   @mixin menu-link {
-    font-size: 18px;
+    font-size: 14px;
     color: $white;
     text-decoration: none;
     transition: $transitions;

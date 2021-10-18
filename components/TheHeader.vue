@@ -10,18 +10,27 @@
        <div class="col-lg-6 d-flex justify-content-end align-items-center">
            <nav class="nav">
                <ul class="menu">
-                   <li class="menu__list">
+                   <!-- <li class="menu__list">
                         <NuxtLink class="menu__link fas fa-home switch-theme__icon" to="/"></NuxtLink>
-                   </li>
+                   </li> -->
                    <li class="menu__list">
                        <NuxtLink class="menu__link" to="/">About Me</NuxtLink>
                    </li>
                    <li class="menu__list">
                        <NuxtLink class="menu__link" to="/">Experience</NuxtLink>
                    </li>
-                   <li class="menu__list">
-                        <a href="#"><span class="fas fa-sun switch-theme-icon"></span></a>
+                    <li class="menu__list">
+                       <NuxtLink class="menu__link" to="/">Projects</NuxtLink>
                    </li>
+                    <li class="menu__list">
+                       <NuxtLink class="menu__link" to="/">Snippets</NuxtLink>
+                   </li>
+                    <li class="menu__list">
+                       <NuxtLink class="menu__link" to="/">Contact</NuxtLink>
+                   </li>
+                   <!-- <li class="menu__list">
+                        <a href="#"><span class="fas fa-sun switch-theme-icon"></span></a>
+                   </li> -->
                </ul>
            </nav>
        </div>
