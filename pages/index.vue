@@ -196,7 +196,7 @@
       margin-top: 10px;
       padding: 10px;
       font-weight: 500;
-      color: $primary-color;
+      color: $white;
       font-size: $body-text-md;
       background: $secondary-color;
       border: $border;
