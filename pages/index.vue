@@ -90,6 +90,7 @@
     border-radius: $border-radius;
     transition: $transitions;
     background-color: $primary-color;
+    border: 2px solid $primary-color;
 
     &::before {
       content: '';
@@ -126,7 +127,7 @@
     font-style: normal;
     font-weight: 500;
     background: unset;
-    border: 1px solid $primary-color;
+    border: 2px solid $primary-color;
     border-radius: $border-radius;
 
     &::before {
@@ -138,7 +139,6 @@
       left: 0;
       right: 0;
       background-color: $primary-color;
-      border-radius: $border-radius;
       transform-origin: center bottom;
       transform: scaleY(0);
       transition: transform 0.25s ease-in-out;
