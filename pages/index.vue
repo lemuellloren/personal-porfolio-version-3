@@ -2,12 +2,15 @@
   <div class="main-container">
     <TheHeader></TheHeader>
     <Intro></Intro>
+    <Experience></Experience>
     <TheFooter></TheFooter>
   </div>
 </template>
 
 <script>
-  export default {}
+import Experience from '../components/Experience.vue'
+  export default {
+  components: { Experience },}
 
 </script>
 
@@ -239,10 +242,12 @@
       color: $white;
       font-weight: 500;
       font-size: 30px;
+      text-align: center;
       line-height: $heading-line-height;
       position: relative;
       margin-top: -55px;
       margin-bottom: 50px;
+
 
       &:after {
         content: '';
@@ -365,6 +370,11 @@
         color: $primary-color;
       }
     }
+  }
+
+  // * Experience 
+  .experience-container {
+    @include section-default;
   }
 
 </style>
