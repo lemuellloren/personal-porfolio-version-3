@@ -8,9 +8,12 @@
 </template>
 
 <script>
-import Experience from '../components/Experience.vue'
+  import Experience from '../components/Experience.vue'
   export default {
-  components: { Experience },}
+    components: {
+      Experience
+    },
+  }
 
 </script>
 
@@ -160,9 +163,49 @@ import Experience from '../components/Experience.vue'
 
 
   //* GLOBAL CLASS 
+  // Typo 
   .body-text {
     @include body-text;
     padding-bottom: 30px;
+  }
+
+  .project-title {
+    font-size: $project-title;
+    line-height: $body-line-height;
+    color: $white;
+    margin: 0;
+  }
+
+  .project-title-span {
+    font-size: $section-title;
+    line-height: $body-line-height;
+    color: $primary-color;
+  }
+
+  .meta {
+    @include body-text;
+    color: $primary-color;
+  }
+
+  // tabs 
+  .experience-tab--pane {
+    padding: 0px 20px 20px 20px;
+  }
+
+  .global-ul {
+    list-style-type: circle;
+    color: $primary-color;
+    margin: 0;
+    padding: 20px;
+
+    .body-text {
+      padding: 0;
+    }
+  }
+
+  .global-tabs--card {
+    background-color: transparent;
+    border: none;
   }
 
   // icons 
@@ -375,6 +418,12 @@ import Experience from '../components/Experience.vue'
   // * Experience 
   .experience-container {
     @include section-default;
+  }
+
+  .experience-tabs-container {
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
   }
 
 </style>
