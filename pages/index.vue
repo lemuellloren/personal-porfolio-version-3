@@ -161,6 +161,20 @@
     }
   }
 
+  // Tabs Button 
+  @mixin btn-tab {
+    color: $primary-color;
+    background: $dark-bg;
+    border: 2px solid $dark-bg;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: $transitions;
+
+    &:hover {
+      border: $border-hover;
+      color: $white;
+    }
+  }
 
   //* GLOBAL CLASS 
   // Typo 
@@ -206,6 +220,24 @@
   .global-tabs--card {
     background-color: transparent;
     border: none;
+  }
+
+  .nav-tabs {
+    border-bottom: unset;
+  }
+
+  .global-tabs {
+    .nav-link {
+      @include btn-tab;
+    }
+
+    .nav-item {
+      .active {
+        @include btn-tab;
+        color: $white;
+        border-color: $primary-color;
+      }
+    }
   }
 
   // icons 

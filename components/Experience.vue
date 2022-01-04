@@ -13,7 +13,7 @@
             <b-tab title="ViewQwest" active>
                 <b-card-text>
                     <div class="experience-tab--pane-content">
-                        <p class="project-title">Software Engineer at <span class="project-title-span">ViewQwest Pte Ltd</span>
+                        <p class="project-title">Software Engineer at  <NuxtLink class="project-title-span" to="/">ViewQwest Pte Ltd</NuxtLink>
                         </p>
                         <div class="meta">
                             September 2019 - Present
