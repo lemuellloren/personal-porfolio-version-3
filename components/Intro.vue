@@ -15,7 +15,7 @@
           I like to craft solid and scalable frontend products with great user experiences.
         </p>
         <div class="intro__btn-group pt-3">
-          <a href="#" class="btn primary-button mr-3">Portfolio</a>
+          <a href="#exp" class="btn primary-button mr-3">Portfolio</a>
           <a href="#" class="btn secondary-button mr-3">Resume</a>
         </div>
         <!-- Technology and Tools  -->
