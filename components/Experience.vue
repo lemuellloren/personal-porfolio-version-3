@@ -31,6 +31,11 @@
                                     including JavaScript, TypeScript, Angular, VueJS, Laravel, and WordPress.
                                 </p>
                             </li>
+                             <li class="global-ul--li">
+                                <p class="body-text">
+                                  Integrate data from various back-end services and databases.
+                                </p>
+                            </li>
                             <li class="global-ul--li">
                                 <p class="body-text">
                                     On a daily basis, communicate with multidisciplinary teams of engineers, project owners, and
@@ -44,7 +49,7 @@
             <b-tab title="TechRemote">
                 <b-card-text>
                      <div class="experience-tab--pane-content">
-                        <p class="project-title">Software Engineer at  <NuxtLink class="project-title-span" to="/">ViewQwest Pte Ltd</NuxtLink>
+                        <p class="project-title">Part Time Web Developer and Designer at  <NuxtLink class="project-title-span" to="/">TechRemote</NuxtLink>
                         </p>
                         <div class="meta">
                             September 2019 - Present
@@ -52,19 +57,18 @@
                         <ul class="global-ul">
                             <li class="global-ul--li">
                                 <p class="body-text">
-                                    Write code that is modern, performant, and maintainable for a wide range of client and
-                                    internal projects.
+                                    Write and design modern websites.
                                 </p>
                             </li>
                             <li class="global-ul--li">
                                 <p class="body-text">
                                     Work with a wide range of languages, platforms, frameworks, and content management systems,
-                                    including JavaScript, TypeScript, Angular, VueJS, Laravel, and WordPress.
+                                    including HTML, CSS, JavaScript and WordPress.
                                 </p>
                             </li>
                             <li class="global-ul--li">
                                 <p class="body-text">
-                                    On a daily basis, communicate with multidisciplinary teams of engineers, project owners, and
+                                   On a daily basis, communicate with multidisciplinary teams of engineers, project owners, and
                                     designers.
                                 </p>
                             </li>
@@ -75,27 +79,30 @@
             <b-tab title="Leet Digital">
                 <b-card-text>
                      <div class="experience-tab--pane-content">
-                        <p class="project-title">Software Engineer at  <NuxtLink class="project-title-span" to="/">ViewQwest Pte Ltd</NuxtLink>
+                        <p class="project-title">Full Stack Developer at  <NuxtLink class="project-title-span" to="/">Leet Digital</NuxtLink>
                         </p>
                         <div class="meta">
-                            September 2019 - Present
+                            November 2016 - September 2019
                         </div>
                         <ul class="global-ul">
                             <li class="global-ul--li">
                                 <p class="body-text">
-                                    Write code that is modern, performant, and maintainable for a wide range of client and
-                                    internal projects.
+                                   Write well designed, testable, efficient code by using best software development practices.
                                 </p>
                             </li>
                             <li class="global-ul--li">
                                 <p class="body-text">
-                                    Work with a wide range of languages, platforms, frameworks, and content management systems,
-                                    including JavaScript, TypeScript, Angular, VueJS, Laravel, and WordPress.
+                                    Create website layout/user interface by using standard HTML/CSS practices.
                                 </p>
                             </li>
                             <li class="global-ul--li">
                                 <p class="body-text">
-                                    On a daily basis, communicate with multidisciplinary teams of engineers, project owners, and
+                                  Integrate data from various back-end services and databases.
+                                </p>
+                            </li>
+                              <li class="global-ul--li">
+                                <p class="body-text">
+                                   On a daily basis, communicate with multidisciplinary teams of engineers, project owners, and
                                     designers.
                                 </p>
                             </li>
