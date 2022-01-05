@@ -194,6 +194,11 @@
     font-size: $section-title;
     line-height: $body-line-height;
     color: $primary-color;
+    transition: $transitions;
+
+    &:hover {
+      color: $white
+    }
   }
 
   .meta {
