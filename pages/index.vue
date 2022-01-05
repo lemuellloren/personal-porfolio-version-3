@@ -3,6 +3,7 @@
     <TheHeader></TheHeader>
     <Intro></Intro>
     <Experience></Experience>
+    <Projects></Projects>
     <TheFooter></TheFooter>
   </div>
 </template>
@@ -25,6 +26,7 @@
   $dark-bg: #1D2430;
   $body-text: 18px;
   $body-text-md: 12px;
+  $body-text-lg: 14px;
   $big-title: 90px;
   $section-title: 30px;
   $project-title: 24px;
@@ -42,7 +44,7 @@
   //* MIXINS
   // menu 
   @mixin menu-link {
-    font-size: 14px;
+    font-size: $body-text-lg;
     color: $white;
     text-decoration: none;
     transition: $transitions;
@@ -176,11 +178,17 @@
     }
   }
 
+
   //* GLOBAL CLASS 
   // Typo 
   .body-text {
     @include body-text;
     padding-bottom: 30px;
+  }
+
+  .body-text-lg {
+    @include body-text;
+    font-size: $body-text-lg;
   }
 
   .project-title {
@@ -195,9 +203,29 @@
     line-height: $body-line-height;
     color: $primary-color;
     transition: $transitions;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      transform: scaleX(0);
+      background-color: $primary-color;
+      transition: transform 0.3s;
+    }
 
     &:hover {
-      color: $white
+      color: $primary-color;
+
+      &:after {
+        transform: scaleX(1);
+      }
     }
   }
 
@@ -205,6 +233,7 @@
     @include body-text;
     color: $primary-color;
   }
+
 
   // tabs 
   .experience-tab--pane {
@@ -337,7 +366,7 @@
         background-color: $primary-color;
         left: 0;
         right: 0;
-        bottom: -15px;
+        bottom: -20px;
         margin: 0 auto;
       }
     }
@@ -428,6 +457,15 @@
     }
   }
 
+  .icon-link {
+    color: $white;
+    transition: $transitions;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
   //* Technology Tools 
   .techstack {
     padding-top: 100px;
@@ -461,6 +499,37 @@
     padding-top: 100px;
     width: 90%;
     margin: 0 auto;
+  }
+
+  // * Projects 
+  .projects {
+    padding-top: 100px;
+
+    .project-title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .tags {
+    color: $primary-color;
+    background: $dark-bg;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 20px;
+  }
+
+  .projects__stacks {
+    margin-top: 20px;
+  }
+
+  .projects__template {
+    margin-bottom: 100px;
+  }
+
+  .projects__img-wrap img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 
 </style>
