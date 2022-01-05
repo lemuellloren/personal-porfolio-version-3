@@ -1,5 +1,5 @@
 <template>
-  <div id="exp" class="experience-container">
+  <div id="exp" class="the-container projects-container">
     <div class="container">
       <div class="big-title">
         {{bigTitle}}

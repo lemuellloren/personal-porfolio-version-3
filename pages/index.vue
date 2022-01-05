@@ -4,6 +4,7 @@
     <Intro></Intro>
     <Experience></Experience>
     <Projects></Projects>
+    <Contact></Contact>
     <TheFooter></TheFooter>
   </div>
 </template>
@@ -180,6 +181,10 @@
 
 
   //* GLOBAL CLASS 
+  .the-container {
+    @include section-default;
+  }
+
   // Typo 
   .body-text {
     @include body-text;
@@ -266,6 +271,7 @@
     }
 
     .nav-item {
+      text-align: center;
       .active {
         @include btn-tab;
         color: $white;
@@ -491,10 +497,6 @@
   }
 
   // * Experience 
-  .experience-container {
-    @include section-default;
-  }
-
   .experience-tabs-container {
     padding-top: 100px;
     width: 90%;
@@ -531,5 +533,10 @@
     height: auto;
     border-radius: 10px;
   }
+
+  // * Contact 
+.social-medias {
+    margin-top: 100px;
+}
 
 </style>
