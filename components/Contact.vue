@@ -9,8 +9,7 @@
       </p>
       <div class="contact-content">
         <p class="body-text text-center">
-          Although I&apos;m not currently looking for any new opportunities, my inbox is always open. Whether you have a
-          question or just want to say hi, I&apos;ll try my best to get back to you!
+          Just want to say hello, I&apos;ll try my best to get back to you!
         </p>
 
         <div class="contact-btn text-center">
@@ -55,7 +54,7 @@
                 </div>
               </a>
             </li>
-                  <li class="my-icons-li">
+            <li class="my-icons-li">
               <a href="#">
                 <div class="my-icons-wrap">
                   <span class="fab fa-behance my-icons-lg"></span>
