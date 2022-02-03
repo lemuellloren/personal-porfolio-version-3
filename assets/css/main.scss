@@ -49,6 +49,9 @@
    min-height: 880px;
    padding-top: 20px;
    padding-bottom: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
 
  // heading 
@@ -250,6 +253,7 @@
 
    .nav-item {
      text-align: center;
+
      .active {
        @include btn-tab;
        color: $white;
@@ -513,6 +517,6 @@
  }
 
  // * Contact 
-.social-medias {
+ .social-medias {
    margin-top: 100px;
-}
+ }
