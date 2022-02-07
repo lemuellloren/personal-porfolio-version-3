@@ -351,10 +351,22 @@
   margin-bottom: 100px;
 }
 
-.projects__img-wrap img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.projects__img-wrap {
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 0px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 }
 
 // * Contact 
