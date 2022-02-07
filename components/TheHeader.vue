@@ -14,9 +14,6 @@
                         <NuxtLink class="menu__link fas fa-home switch-theme__icon" to="/"></NuxtLink>
                    </li> -->
                    <li class="menu__list">
-                       <NuxtLink class="menu__link" to="/">About Me</NuxtLink>
-                   </li>
-                   <li class="menu__list">
                        <NuxtLink class="menu__link" to="/">Experience</NuxtLink>
                    </li>
                     <li class="menu__list">
