@@ -1,522 +1,363 @@
- //* VARIABLES
- $primary-color: #7D5FFF;
- $secondary-color: #1A202C;
- $white: #F7F7F7;
- $dark-bg: #1D2430;
- $body-text: 18px;
- $body-text-md: 12px;
- $body-text-lg: 14px;
- $big-title: 90px;
- $section-title: 30px;
- $project-title: 24px;
- $box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
- $border-radius: 5px;
- $border-hover: 2px solid $primary-color;
- $font: 'Poppins',
- sans-serif;
- $transitions: all ease .4s;
- $border: 2px solid $primary-color;
- $body-line-height: 1.5em;
- $heading-line-height: 1em;
- $bold: bold;
 
- //* MIXINS
- // menu 
- @mixin menu-link {
-   font-size: $body-text-lg;
-   color: $white;
-   text-decoration: none;
-   transition: $transitions;
-
-   &:hover {
-     color: $primary-color;
-   }
- }
-
- body {
-   font-family: $font;
- }
-
- a {
-   &:hover {
-     text-decoration: none;
-   }
- }
-
- // section default style
- @mixin section-default {
-   background-color: $secondary-color;
-   min-height: 880px;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
-
- // heading 
- @mixin heading {
-   color: $white;
-   font-weight: 500;
-   line-height: $heading-line-height;
- }
-
- // body text 
- @mixin body-text {
-   font-weight: normal;
-   font-size: $body-text;
-   line-height: $body-line-height;
-   color: $white;
- }
-
- // primary button 
- @mixin primary-btn {
-   z-index: 1;
-   position: relative;
-   color: $secondary-color;
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 500;
-   border-radius: $border-radius;
-   transition: $transitions;
-   background-color: $primary-color;
-   border: 2px solid $primary-color;
-
-   &::before {
-     content: '';
-     z-index: -1;
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     background-color: $secondary-color;
-     border-radius: $border-radius;
-     transform-origin: center bottom;
-     transform: scaleY(0);
-     transition: transform 0.25s ease-in-out;
-   }
-
-   &:hover {
-     cursor: pointer;
-     color: $white;
-   }
-
-   &:hover::before {
-     transform-origin: center top;
-     transform: scaleY(1);
-   }
- }
-
- // secondary button 
- @mixin secondary-btn {
-   z-index: 1;
-   position: relative;
-   color: $primary-color;
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 500;
-   background: unset;
-   border: 2px solid $primary-color;
-   border-radius: $border-radius;
-
-   &::before {
-     content: '';
-     z-index: -1;
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     background-color: $primary-color;
-     transform-origin: center bottom;
-     transform: scaleY(0);
-     transition: transform 0.25s ease-in-out;
-   }
-
-   &:hover {
-     cursor: pointer;
-     color: $white;
-   }
-
-   &:hover::before {
-     transform-origin: center top;
-     transform: scaleY(1);
-   }
- }
-
- // Tabs Button 
- @mixin btn-tab {
-   color: $primary-color;
-   background: $dark-bg;
-   border: 2px solid $dark-bg;
-   border-radius: 5px;
-   margin-bottom: 10px;
-   transition: $transitions;
-
-   &:hover {
-     border: $border-hover;
-     color: $white;
-   }
- }
-
+ @import "./abstracts/variables";
+ @import "./abstracts/mixins";
 
  //* GLOBAL CLASS 
  .the-container {
-   @include section-default;
- }
+  @include section-default;
+}
 
- // Typo 
- .body-text {
-   @include body-text;
-   padding-bottom: 30px;
- }
+// Typo 
+.body-text {
+  @include body-text;
+  padding-bottom: 30px;
+}
 
- .body-text-lg {
-   @include body-text;
-   font-size: $body-text-lg;
- }
+.body-text-lg {
+  @include body-text;
+  font-size: $body-text-lg;
+}
 
- .project-title {
-   font-size: $project-title;
-   line-height: $body-line-height;
-   color: $white;
-   margin: 0;
- }
+.project-title {
+  font-size: $project-title;
+  line-height: $body-line-height;
+  color: $white;
+  margin: 0;
+}
 
- .project-title-span {
-   font-size: $section-title;
-   line-height: $body-line-height;
-   color: $primary-color;
-   transition: $transitions;
-   display: inline-block;
-   position: relative;
-   text-decoration: none;
+.project-title-span {
+  font-size: $section-title;
+  line-height: $body-line-height;
+  color: $primary-color;
+  transition: $transitions;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
 
-   &:after {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     width: 100%;
-     height: 3px;
-     transform: scaleX(0);
-     background-color: $primary-color;
-     transition: transform 0.3s;
-   }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    background-color: $primary-color;
+    transition: transform 0.3s;
+  }
 
-   &:hover {
-     color: $primary-color;
+  &:hover {
+    color: $primary-color;
 
-     &:after {
-       transform: scaleX(1);
-     }
-   }
- }
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}
 
- .meta {
-   @include body-text;
-   color: $primary-color;
- }
-
-
- // tabs 
- .experience-tab--pane {
-   padding: 0px 20px 20px 20px;
- }
-
- .global-ul {
-   list-style-type: circle;
-   color: $primary-color;
-   margin: 0;
-   padding: 20px;
-
-   .body-text {
-     padding: 0;
-   }
- }
-
- .global-tabs--card {
-   background-color: transparent;
-   border: none;
- }
-
- .nav-tabs {
-   border-bottom: unset;
- }
-
- .global-tabs {
-   .nav-link {
-     @include btn-tab;
-   }
-
-   .nav-item {
-     text-align: center;
-
-     .active {
-       @include btn-tab;
-       color: $white;
-       border-color: $primary-color;
-     }
-   }
- }
-
- // icons 
- .my-icons-lg {
-   color: $white;
-   font-size: 30px;
-   width: 72px;
-   height: 72px;
-   background: $dark-bg;
-   box-shadow: $box-shadow;
-   border-radius: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: 10px;
-   transition: $transitions;
-
-   &:hover {
-     border: $border-hover;
-     color: $primary-color;
-   }
- }
-
- // icon tooltip 
- .my-icons-wrap {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-content: center;
-
-   &__text {
-     position: absolute;
-     top: 60%;
-     margin-top: 10px;
-     padding: 10px;
-     font-weight: 500;
-     color: $white;
-     font-size: $body-text-md;
-     background: $secondary-color;
-     border: $border;
-     box-sizing: border-box;
-     border-radius: $border-radius;
-     white-space: nowrap;
-     pointer-events: none;
-     user-select: none;
-     opacity: 0;
-     transition: all 0.2s ease-in-out;
-   }
-
-   &:hover {
-     span {
-       top: 100%;
-       opacity: 0.9;
-     }
-   }
- }
-
- // icons list 
- .my-icons-ul {
-   padding: 0;
-   list-style: none;
-   margin: 0;
- }
-
- // buttons 
- .primary-button {
-   @include primary-btn;
- }
-
- .secondary-button {
-   @include secondary-btn;
- }
-
- // section title 
- .section-title {
-   &__text {
-     color: $white;
-     font-weight: 500;
-     font-size: 30px;
-     text-align: center;
-     line-height: $heading-line-height;
-     position: relative;
-     margin-top: -55px;
-     margin-bottom: 50px;
+.meta {
+  @include body-text;
+  color: $primary-color;
+}
 
 
-     &:after {
-       content: '';
-       height: 5px;
-       width: 70px;
-       position: absolute;
-       background-color: $primary-color;
-       left: 0;
-       right: 0;
-       bottom: -20px;
-       margin: 0 auto;
-     }
-   }
- }
+// tabs 
+.experience-tab--pane {
+  padding: 0px 20px 20px 20px;
+}
+
+.global-ul {
+  list-style-type: circle;
+  color: $primary-color;
+  margin: 0;
+  padding: 20px;
+
+  .body-text {
+    padding: 0;
+  }
+}
+
+.global-tabs--card {
+  background-color: transparent;
+  border: none;
+}
+
+.nav-tabs {
+  border-bottom: unset;
+}
+
+.global-tabs {
+  .nav-link {
+    @include btn-tab;
+  }
+
+  .nav-item {
+    text-align: center;
+
+    .active {
+      @include btn-tab;
+      color: $white;
+      border-color: $primary-color;
+    }
+  }
+}
+
+// icons 
+.my-icons-lg {
+  color: $white;
+  font-size: 30px;
+  width: 72px;
+  height: 72px;
+  background: $dark-bg;
+  box-shadow: $box-shadow;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: $transitions;
+
+  &:hover {
+    border: $border-hover;
+    color: $primary-color;
+  }
+}
+
+// icon tooltip 
+.my-icons-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &__text {
+    position: absolute;
+    top: 60%;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 500;
+    color: $white;
+    font-size: $body-text-md;
+    background: $secondary-color;
+    border: $border;
+    box-sizing: border-box;
+    border-radius: $border-radius;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    span {
+      top: 100%;
+      opacity: 0.9;
+    }
+  }
+}
+
+// icons list 
+.my-icons-ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+// buttons 
+.primary-button {
+  @include primary-btn;
+}
+
+.secondary-button {
+  @include secondary-btn;
+}
+
+// section title 
+.section-title {
+  &__text {
+    color: $white;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    line-height: $heading-line-height;
+    position: relative;
+    margin-top: -55px;
+    margin-bottom: 50px;
 
 
- // * GLOBAL STYLES 
- //* Header
- .the-header {
-   min-height: 120px;
-   background-color: $secondary-color;
- }
+    &:after {
+      content: '';
+      height: 5px;
+      width: 70px;
+      position: absolute;
+      background-color: $primary-color;
+      left: 0;
+      right: 0;
+      bottom: -20px;
+      margin: 0 auto;
+    }
+  }
+}
 
- .logo {
-   color: $white;
-   font-weight: 300;
-   font-size: 30px;
-   line-height: 45px;
 
-   span {
-     color: $primary-color;
-     font-weight: 500;
-     font-size: 30px;
-     line-height: 45px;
-   }
- }
+// * GLOBAL STYLES 
+//* Header
+.the-header {
+  min-height: 120px;
+  background-color: $secondary-color;
+}
 
- .menu {
-   list-style: none;
-   padding: 0;
-   margin: 0;
+.logo {
+  color: $white;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
 
-   &__list {
-     margin: 0 10px;
-     padding: 0;
-     display: inline-block;
-   }
+  span {
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
 
-   &__link {
-     @include menu-link;
-   }
- }
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
- .switch-theme-icon {
-   margin-left: 40px;
-   @include menu-link;
- }
+  &__list {
+    margin: 0 10px;
+    padding: 0;
+    display: inline-block;
+  }
 
- // Big title 
- .big-title {
-   color: $dark-bg;
-   font-size: $big-title;
-   font-weight: 900;
-   text-align: center;
-   line-height: 8.4375rem;
-   letter-spacing: 0.24em;
-   text-transform: uppercase;
- }
+  &__link {
+    @include menu-link;
+  }
+}
 
- //* Intro Section 
- .intro-container {
-   @include section-default;
+.switch-theme-icon {
+  margin-left: 40px;
+  @include menu-link;
+}
 
-   .intro {
-     &__heading {
-       @include heading;
-       font-size: 90px;
-       font-weight: $bold;
-       margin-top: -70px;
-     }
+// Big title 
+.big-title {
+  color: $dark-bg;
+  font-size: $big-title;
+  font-weight: 900;
+  text-align: center;
+  line-height: 8.4375rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
 
-     &__subheading {
-       @include heading;
-       margin-top: 20px;
-     }
+//* Intro Section 
+.intro-container {
+  @include section-default;
 
-     &__subheading--bold {
-       color: $primary-color;
-       font-weight: 600;
-     }
+  .intro {
+    &__heading {
+      @include heading;
+      font-size: 90px;
+      font-weight: $bold;
+      margin-top: -70px;
+    }
 
-     &__body {
-       @include body-text;
-       width: 45%;
-       margin: 0 auto;
-       padding-bottom: 30px;
-     }
-   }
- }
+    &__subheading {
+      @include heading;
+      margin-top: 20px;
+    }
 
- .icon-link {
-   color: $white;
-   transition: $transitions;
+    &__subheading--bold {
+      color: $primary-color;
+      font-weight: 600;
+    }
 
-   &:hover {
-     color: $primary-color;
-   }
- }
+    &__body {
+      @include body-text;
+      width: 45%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+  }
+}
 
- //* Technology Tools 
- .techstack {
-   padding-top: 100px;
- }
+.icon-link {
+  color: $white;
+  transition: $transitions;
 
- // * Footer 
- .the-footer {
-   min-height: 120px;
-   background-color: $secondary-color;
-   // position: absolute;
-   // bottom: 0;
-   // width: 100%;
+  &:hover {
+    color: $primary-color;
+  }
+}
 
-   .footer-text {
-     @include body-text;
-     text-align: center;
+//* Technology Tools 
+.techstack {
+  padding-top: 100px;
+}
 
-     &__creator-name {
-       font-weight: 500;
-       color: $primary-color;
-     }
-   }
- }
+// * Footer 
+.the-footer {
+  min-height: 120px;
+  background-color: $secondary-color;
+  // position: absolute;
+  // bottom: 0;
+  // width: 100%;
 
- // * Experience 
- .experience-tabs-container {
-   padding-top: 100px;
-   width: 90%;
-   margin: 0 auto;
- }
+  .footer-text {
+    @include body-text;
+    text-align: center;
 
- // * Projects 
- .projects {
-   padding-top: 100px;
+    &__creator-name {
+      font-weight: 500;
+      color: $primary-color;
+    }
+  }
+}
 
-   .project-title {
-     margin-bottom: 20px;
-   }
- }
+// * Experience 
+.experience-tabs-container {
+  padding-top: 100px;
+  width: 90%;
+  margin: 0 auto;
+}
 
- .tags {
-   color: $primary-color;
-   background: $dark-bg;
-   border-radius: 10px;
-   padding: 10px 15px;
-   margin-right: 20px;
- }
+// * Projects 
+.projects {
+  padding-top: 100px;
 
- .projects__stacks {
-   margin-top: 20px;
- }
+  .project-title {
+    margin-bottom: 20px;
+  }
+}
 
- .projects__template {
-   margin-bottom: 100px;
- }
+.tags {
+  color: $primary-color;
+  background: $dark-bg;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-right: 20px;
+}
 
- .projects__img-wrap img {
-   width: 100%;
-   height: auto;
-   border-radius: 10px;
- }
+.projects__stacks {
+  margin-top: 20px;
+}
 
- // * Contact 
- .social-medias {
-   margin-top: 100px;
- }
+.projects__template {
+  margin-bottom: 100px;
+}
+
+.projects__img-wrap img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+// * Contact 
+.social-medias {
+  margin-top: 100px;
+}
